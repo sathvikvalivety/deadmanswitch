@@ -1,0 +1,19 @@
+[Unit]
+Description=Dead Man's Switch Heartbeat Daemon
+After=network-online.target time-sync.target
+Wants=network-online.target time-sync.target
+
+[Service]
+User=deadman
+Group=deadman
+EnvironmentFile=/etc/deadman/env
+ExecStart=/opt/deadman/venv/bin/python /opt/deadman/heartbeat.py
+Restart=always
+RestartSec=20
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

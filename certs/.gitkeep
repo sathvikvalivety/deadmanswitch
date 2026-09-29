@@ -1,0 +1,2 @@
+# This directory stores generated AWS IoT certificates and SSH keys.
+# Private keys and certificates are ignored by git for security.

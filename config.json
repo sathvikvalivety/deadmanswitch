@@ -1,0 +1,23 @@
+{
+  "from_email": "deadman@yourdomain.com",
+  "owner_emails": [
+    "you@example.com",
+    "you.backup@example.org"
+  ],
+  "safety_contacts": [
+    "trusted-friend@example.com"
+  ],
+  "remind_after_h": 120,
+  "final_after_h": 168,
+  "cancel_window_h": 48,
+  "reminder_every_h": 24,
+  "pi_alert_after_min": 30,
+  "pi_alert_every_h": 6,
+  "recipients": [
+    {
+      "email": "recipient@example.com",
+      "subject": "Important message from <Your Name>",
+      "body": "You are receiving this message because I have not checked in to my personal safety monitor for several days. Please follow up accordingly."
+    }
+  ]
+}

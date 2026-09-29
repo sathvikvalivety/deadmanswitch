@@ -1,0 +1,15 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "iot:Connect",
+      "Resource": "arn:aws:iot:${AWS_REGION}:${ACCOUNT_ID}:client/${THING}"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "iot:Publish",
+      "Resource": "arn:aws:iot:${AWS_REGION}:${ACCOUNT_ID}:topic/deadman/heartbeat"
+    }
+  ]
+}

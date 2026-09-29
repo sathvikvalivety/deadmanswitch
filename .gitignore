@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments & Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# AWS & Lambda build artifacts
+lambda/*.zip
+*.zip
+out.json
+
+# Certificates & Private Keys
+certs/*.pem
+certs/*.crt
+certs/*.key
+certs/id_*
+!certs/.gitkeep
+
+# Secret payload files
+secrets/*.tar.gz
+secrets/*.age
+secrets/recovered_files/
+payload.tar.gz
+payload.age
+
+# OS specific
+.DS_Store
+Thumbs.db
